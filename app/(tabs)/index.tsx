@@ -1,25 +1,21 @@
-import { StyleSheet ,View, Text, SafeAreaView, ScrollView } from "react-native";
-import Jobs from "@/components/Jobs";
-
+import { StyleSheet, SafeAreaView, ScrollView } from "react-native";
+import JobsScreen from "@/components/JobsScreen";
 
 export default function Home() {
-
   return (
     <ScrollView>
-      <SafeAreaView style={styles.container}>        
-          <Jobs />        
+      <SafeAreaView style={styles.container}>
+        <JobsScreen />
       </SafeAreaView>
     </ScrollView>
   );
 }
 
-
-const styles = StyleSheet.create({  
+const styles = StyleSheet.create({
   container: {
-    flex: 1,    
+    flex: 1,
     justifyContent: "flex-start",
     paddingHorizontal: 25,
     paddingVertical: 50,
   },
-
 });
